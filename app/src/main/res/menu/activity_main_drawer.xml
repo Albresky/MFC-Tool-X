@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_diff_tool"
+            android:icon="@drawable/ic_baseline_diff_tool"
+            android:title="@string/menu_t_diff" />
+        <item
+            android:id="@+id/nav_bcc_calcu_tool"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="@string/menu_t_bcc_calcu" />
+        <item
+            android:id="@+id/nav_edit_dumps"
+            android:icon="@drawable/ic_baseline_analyze_dumps"
+            android:title="@string/menu_t_edit_dumps" />
+        <item
+            android:id="@+id/nav_clone_uid_magic"
+            android:icon="@drawable/ic_baseline_uid_clone"
+            android:title="@string/menu_t_clone_uid_magic" />
+        <item
+            android:id="@+id/nav_emv_cc_check"
+            android:icon="@drawable/ic_baseline_credit_card_check"
+            android:title="@string/menu_t_emv_cc_check" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_baseline_exit_app"
+            android:title="@string/menu_exit" />
+    </group>
+</menu>

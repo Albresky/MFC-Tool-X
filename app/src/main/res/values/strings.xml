@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MFC Tool X</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MFC Tool X</string>
+    <string name="nav_header_subtitle">Mifare Classic Tool eXtended</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation Menu Items -->
+    <string name="menu_home">Home</string>
+    <string name="menu_t_diff">Diff Tool</string>
+    <string name="menu_t_bcc_calcu">BCC Calculator</string>
+    <string name="menu_t_edit_dumps">Analyze Dumps</string>
+    <string name="menu_t_clone_uid_magic">UID Clone</string>
+    <string name="menu_t_emv_cc_check">EMV Check</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_exit">Exit</string>
+
+
+    <!-- Home Fragment -->
+    <string name="read_tag_advanced">Read Tag Advanced</string>
+    <string name="display_tag_deatils">Display Tag Deatils</string>
+</resources>
