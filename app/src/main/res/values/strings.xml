@@ -21,4 +21,15 @@
     <!-- Home Fragment -->
     <string name="read_tag_advanced">Read Tag Advanced</string>
     <string name="display_tag_deatils">Display Tag Deatils</string>
+    <string name="pref_number_header">Number</string>
+    <string name="custom_sector_count">Use custom sector count</string>
+    <string name="retry_auth_if_fail">Retry the authentication if it fails</string>
+    <string name="pref_advanced">Advanced</string>
+    <string name="autorestart">Auto restart app</string>
+    <string name="autorestart_summary_off">Remain running if a tag is detected</string>
+    <string name="autorestart_summary_on">Restart app if a tag is detected</string>
+    <string name="autoreconnect">Auto reconnect tag</string>
+    <string name="autoreconnect_summary_off">Do not reconnect if tag lost connect</string>
+    <string name="autoreconnect_summary_on">Reconnect tag if it gets lost</string>
+    <string name="menu_preferences">Preference</string>
 </resources>

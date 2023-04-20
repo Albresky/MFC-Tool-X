@@ -1,12 +1,15 @@
 package cn.albresky.mifareclassictoolx;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -15,6 +18,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import cn.albresky.mifareclassictoolx.databinding.ActivityMainBinding;
+import cn.albresky.mifareclassictoolx.ui.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +45,11 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_diff_tool, R.id.nav_edit_dumps, R.id.nav_bcc_calcu_tool)
+                R.id.nav_home,
+                R.id.nav_diff_tool,
+                R.id.nav_edit_dumps,
+                R.id.nav_bcc_calcu_tool,
+                R.id.nav_settings)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -53,6 +61,22 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        // Handle item selection.
+        super.onOptionsItemSelected(item);
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.menu_settings:
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                return false;
+        }
         return true;
     }
 

@@ -7,66 +7,44 @@
     android:padding="10dp"
     tools:context=".ui.home.HomeFragment">
 
-    <LinearLayout
-        android:id="@+id/layout_tag_detail"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.google.android.material.imageview.ShapeableImageView
-
-            android:layout_width="match_parent"
-            android:background="@color/cardview_dark_background"
-            android:scaleType="fitCenter"
-            android:layout_height="wrap_content"
-            app:shapeAppearanceOverlay="@style/roundImageStyle"
-            android:src="@drawable/tag_info">
-        </com.google.android.material.imageview.ShapeableImageView>
-        <TextView
-            android:text="@string/display_tag_deatils"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/layout_tag_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="match_parent"
-            android:background="@color/cardview_dark_background"
-            android:scaleType="fitCenter"
-            android:layout_height="wrap_content"
-            app:shapeAppearanceOverlay="@style/roundImageStyle"
-            android:src="@drawable/read_tag">
-        </com.google.android.material.imageview.ShapeableImageView>
-        <TextView
-            android:text="@string/read_tag_advanced"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/text_home"
-        android:text="home"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_read_tag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:background="@color/cardview_dark_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tag_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/display_tag_deatils"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_read_tag" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_display_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/read_tag"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_read_tag"
+        app:shapeAppearanceOverlay="@style/roundImageStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/read_tag_advanced"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_display_tag" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

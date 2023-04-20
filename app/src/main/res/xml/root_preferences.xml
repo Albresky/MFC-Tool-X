@@ -1,0 +1,51 @@
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/pref_number_header">
+
+        <CheckBoxPreference
+            app:icon="@drawable/ic_baseline_sector_count"
+            app:key="cb_sectorCount"
+            app:title="@string/custom_sector_count"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:enableCopying="false"
+            app:enabled="false"
+            app:key="edit_sectorCount"
+            app:defaultValue="16" />
+        <CheckBoxPreference
+            app:icon="@drawable/ic_baseline_retry_auth"
+            app:key="cb_retry_auth"
+            app:title="@string/retry_auth_if_fail"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:enableCopying="false"
+            app:enabled="false"
+            app:key="edit_sectorCount"
+            app:defaultValue="1" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_advanced"
+
+        >
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_auto_restart_app"
+            app:key="autorestart"
+            app:title="@string/autorestart"
+            app:summaryOff="@string/autorestart_summary_off"
+            app:summaryOn="@string/autorestart_summary_on" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_auto_reconnect_tag"
+            app:key="autoreconnect"
+            app:title="@string/autoreconnect"
+            app:summaryOff="@string/autoreconnect_summary_off"
+            app:summaryOn="@string/autoreconnect_summary_on" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
